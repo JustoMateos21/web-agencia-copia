@@ -8,11 +8,34 @@ import { AiOutlineRise } from "react-icons/ai";
 import { FiRepeat } from "react-icons/fi";
 
 const Benefits = () => {
-
   return (
-    <div className={styles.Benefits}>
-      <p>Benefits of having a professional web</p>
-      <p
+    <div className={styles.benefits}>
+      <h2 className={styles.benefitTitle}>
+        Benefits of having a professional web
+      </h2>
+      <p>
+        You open up to the world <BsFillDoorOpenFill />
+      </p>
+      <p>
+        New customers
+        <FaPeopleCarry />
+      </p>
+      <p>
+        {" "}
+        Much lower costs <FaMoneyBillAlt />
+      </p>
+      <p>
+        No schedules
+        <AiOutlineSchedule />
+      </p>
+      <p>
+        Ultrasegmented marketing + high conversion
+        <AiOutlineRise />
+      </p>
+      <p>
+        Automation, less work, more performance
+        <FiRepeat />
+      </p>
     </div>
   );
 };
