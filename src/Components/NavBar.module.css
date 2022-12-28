@@ -1,8 +1,10 @@
 .navBar {
   display: flex;
+  height: 50px;
+  width: 100%;
+  position: absolute;
   justify-content: space-around;
   align-items: center;
-  background-color: #4a4564;
 }
 
 .navOpen {

@@ -60,7 +60,11 @@ const NavBar = () => {
     >
       {!navBarOpen && <p className={styles.logo}>DISO | Digital Solutions</p>}
       {!navBarOpen && windowDimension.width < 800 ? (
-        <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} size={25} />
+        <AiOutlineMenu
+          color="#f1f1f1"
+          onClick={() => setNavBarOpen(!navBarOpen)}
+          size={25}
+        />
       ) : (
         windowDimension.width < 800 && (
           <AiOutlineClose
