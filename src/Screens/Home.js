@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <div name="Home" className={styles.home}>
       <div className={styles.titleContainer}>
         <p>
           Expand your <br />

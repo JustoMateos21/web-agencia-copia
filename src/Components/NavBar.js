@@ -76,16 +76,17 @@ const NavBar = () => {
       )}
       {navBarOpen && (
         <ul className={styles.linksContainer}>
-          {links.map((x) => (
+          {links.map(({ id, link }) => (
             <div>
               <Link
+                key={id}
                 onClick={() => setNavBarOpen(false)}
-                to={x.link}
+                to={link}
                 smooth
                 duration={500}
                 className={styles.navLink}
               >
-                {x.link === "HowWeWork" ? "How we work" : x.link}
+                {link === "HowWeWork" ? "How we work" : link}
               </Link>
               <div className={styles.border}></div>
             </div>
@@ -94,16 +95,16 @@ const NavBar = () => {
       )}
       {windowDimension.width > 800 && (
         <ul className={styles.linksContainer}>
-          {links.map((x) => (
+          {links.map(({ link, id }) => (
             <div>
               <Link
                 onClick={() => setNavBarOpen(false)}
-                to={x.link}
+                to={link}
                 smooth
                 duration={500}
                 className={styles.navLink}
               >
-                {x.link === "HowWeWork" ? "How we work" : x.link}
+                {link === "HowWeWork" ? "How we work" : link}
               </Link>
               <div className={styles.border}></div>
             </div>
